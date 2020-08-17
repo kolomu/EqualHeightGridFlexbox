@@ -1,0 +1,34 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    display: flex; /* each list item should stretch vertically */
+    width: 100%;
+}
+
+.list-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 100%;
+    background-color: #fff;
+}
+
+.list-content p {
+    flex: 1 0 auto; 
+}
+
+@media all and (min-width: 40em) {
+    /* 2 items per row (tablet size) */
+    .list-item {
+      width: 50%;
+    }
+  }
+  @media all and (min-width: 60em) {
+      /* 3 items per row (desktop size) */
+    .list-item {
+      width: 33.33%;
+    }
+  }
